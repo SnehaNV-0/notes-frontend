@@ -42,7 +42,7 @@ const Home = () => {
   // get all notes
   const getAllNotes = async () => {
     try {
-      const res = await axios.get("https://notes-backend-chkl.onrender.com", {
+      const res = await axios.get("https://notes-backend-chkl.onrender.com/api/note/all", {
         withCredentials: true,
       })
 

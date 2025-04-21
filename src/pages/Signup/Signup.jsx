@@ -36,7 +36,7 @@ const Signup = () => {
     // ✅ Corrected signup API call
     try {
       const res = await axios.post(
-        "https://notes-backend-chkl.onrender.com",
+        "https://notes-backend-chkl.onrender.com/api/auth/signup",
         { username : name, email, password }, // 👈 changed `username` to `name`
         { withCredentials: true }
       )

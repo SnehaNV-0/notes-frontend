@@ -40,7 +40,7 @@ const Login = () => {
       dispatch(signInStart())
 
       const res = await axios.post(
-        "https://notes-backend-chkl.onrender.com",
+        "https://notes-backend-chkl.onrender.com/api/auth/signin",
         { email, password },
         { withCredentials: true }
       )
